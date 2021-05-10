@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<the-header :title="'Learning Resources App'"></the-header>
+	<the-resources></the-resources>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	import TheHeader from "./layouts/TheHeader";
+	import TheResources from "./components/learning-resources/TheResources.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	export default {
+		components: {
+			TheHeader,
+			TheResources,
+		},
+	};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+	* {
+		box-sizing: border-box;
+		font-family: "Josefin Sans", sans-serif;
+	}
+
+	body {
+		margin: 0;
+	}
 </style>
