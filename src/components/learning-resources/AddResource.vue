@@ -18,6 +18,7 @@
 					name="title"
 					placeholder="Resource Title"
 					ref="titleInput"
+					autocomplete="off"
 				/>
 			</div>
 			<div class="form-element">
@@ -28,6 +29,7 @@
 					name="description"
 					placeholder="Short Description"
 					ref="descriptionInput"
+					autocomplete="off"
 				/>
 			</div>
 			<div class="form-element">
@@ -38,6 +40,7 @@
 					name="link"
 					placeholder="Link to Resource"
 					ref="linkInput"
+					autocomplete="off"
 				/>
 			</div>
 			<div class="form-button">
